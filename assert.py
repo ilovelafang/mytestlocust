@@ -12,7 +12,7 @@ class UserTask(TaskSet):
         #         response.success()
         #     else:
         #         response.failure('Failed!')
-        print(a.status_code)
+        #print(a.status_code)
 
 class User(HttpLocust):
     task_set = UserTask
