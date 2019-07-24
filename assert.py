@@ -16,4 +16,6 @@ class UserTask(TaskSet):
 
 class User(HttpLocust):
     task_set = UserTask
+    min_wait = 1
+    max_wait = 10
     host = "http://l-test-elb1-1859238974.ap-southeast-1.elb.amazonaws.com"
